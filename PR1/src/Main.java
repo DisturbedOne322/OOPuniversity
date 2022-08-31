@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        //Андріанов Я.О. 222/3
         firstTask();
         secondTask();
         thirtTask();
@@ -25,7 +26,7 @@ public class Main {
             {
                 System.out.println("Катети повинні бути в межах від " + lowerBound + " до " + upperBound);
             }
-        }while ((katet1 < lowerBound && katet1 > upperBound) || (katet2 < lowerBound && katet2 > upperBound));
+        }while ((katet1 < lowerBound || katet1 > upperBound) || (katet2 < lowerBound || katet2 > upperBound));
 
         System.out.println("Гіпотенуза трикутника дорівнює " + (Math.sqrt(Math.pow(katet1,2) + Math.pow(katet2,2))));
     }
